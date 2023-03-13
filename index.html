@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+      .nav {
+        /* border: 2px solid red; */
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* width: 100vw; */
+       min-height: 10vh;
+       padding: 1px 15px;
+       position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+      }
+   
+      .nav-items ul  {
+        display: flex;
+      
+        list-style: none;
+        margin-left:10px ;
+      }
+     
+      .nav-items ul li a{
+        color: black;
+        list-style: none;
+      }
+      .nav-items ul a{
+        margin: 0px 10px;
+        
+        list-style: none;
+        text-decoration: none;
+      }
+      .botton-item{
+        display: flex;
+        align-items: center;
+      }
+      .botton-item input{
+        outline: none;
+        border-radius:  5px;
+        border: 0.1px solid black;
+        padding: 5px ;
+        margin-right: 5px;
+      }
+      .botton-item label{
+        outline: none;
+/* background-color: red; */
+color: green;
+border-radius: 10px;
+border: 1px solid green;
+padding: 10px 10px;
+cursor: pointer;
+      }
+      .botton-item label:hover{
+background-color: green;
+color: white;
+      }
+      .Logo img{
+        height: 9vh;
+        cursor: pointer;
+      }
+       h2{
+        color: black;
+        font-weight: 200;
+      }
+.container{
+    /* border: 2px solid red; */
+    background-image:url(boutique_shopping_clothing_exhibition_dresses-755910_1_.jpg) ;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+    min-height: 100vh; 
+    /* width: 100vw; */
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   /* position: relative;
+   z-index: -1;  */
+} 
+.container-2{
+  background: url(fashion-clothes-store-shopping-mall-bucharest-romania-april-april-bucharest-romania-40003846.jpg);
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+   justify-content: center;
+   align-items: center;
+    position: relative;
+   z-index: -1;  
+
+}
+.container-2::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.container-3{
+  background:  rgba(123, 115, 115, 0.5);
+  
+  display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 130vh;
+  
+}
+.container-4{
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+  min-height: 100vh;
+} 
+
+/* .container::after{
+content: "";
+position: absolute;
+top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+} */
+
+.box{
+    /* border: 2px solid red; */
+   min-height: 100vh;
+   width: 70vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   
+
+}
+.btn-box{
+    /* border: 2px solid red; */
+height: 7vh;
+/* width: 20vw; */
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+
+
+}
+
+
+.box h1{
+    /* font-weight: 400; */
+    font-size: 3rem;
+    color:whitesmoke; 
+    /* font-size: 46px; */
+  /* margin: -40px 0 40px; */
+  margin:-34px 0 57px;
+ 
+  
+  
+}
+.box p{
+    font-size: 18px;
+  letter-spacing:1px ;
+  margin: -35px 0 35px; 
+  /* text-align: center; */
+  color:whitesmoke;
+}
+.btn-box .btn{
+    font-size: 20px;
+    margin: 0 10px;
+    padding: 7px 5px;
+    border-radius: 10px;
+  border: none;
+    background-color: red;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.btn-box .btn-outline{
+    font-size: 20px;
+    margin: 0 10px;
+    padding: 7px 5px;
+    border-radius: 10px;
+    border: 1px solid green;
+   cursor: pointer;
+    color: green;
+}
+.btn-box .btn-outline:hover{
+    background-color: green;
+color: white;
+
+}
+
+@media screen and (max-width:666px){
+  .box h1{
+    font-size:25px ;
+  }
+}
+@media screen and (max-width:591px){
+  .container{
+    width: 100vw;
+  }
+  .nav{
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width:519px){
+  .botton-item{
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width:422px) {
+  .btn-box .btn{
+    font-size: 13px;
+  }
+  .btn-box .btn-outline{
+    font-size: 13px;
+  }
+}
+.main{
+  /* border: 2px solid blue; */
+  min-height: 90vh;
+  display: flex;
+  
+
+}
+.box-1{
+  /* border: 2px solid red; */
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:  30px 20px;
+}
+.box-2{
+  /* border: 2px solid green; */
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 20px;
+}
+.box-2 h1{
+  font-size: 40px;
+  margin: -20px 0 20px;
+}
+.box-2 p{
+  margin: -20px 0 20px;
+  
+}
+.big-btn .btn{
+  font-size: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: red;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+@media screen and (max-width:850px){
+  .main{
+    flex-wrap: wrap;
+  }
+  .box-1{
+    width: 100vw;
+  }
+  .box-2{
+    width: 100vw;
+  }
+  .box-2 p{
+    width: 70%;
+  }
+  .big-btn .btn{
+    font-size: 23px;
+  }
+}
+@media screen and (max-width:530px) {
+  .box-1 img{
+    width: 79%;
+  }
+  /* .box-2{
+    width: 100vw;
+  } */
+  .box-2 p{
+    width:79% ;
+  }
+  .big-btn .btn{
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width:350px){
+  .box-1 img{
+    width: 74%;
+  }
+  .box-2 h1{
+    font-size: 23px;
+  }
+  .box-2 p{
+    width:100% ;
+  }
+  .big-btn .btn{
+    font-size: 13px;
+  }
+}
+.gray{
+  /* background-color: rgb(217, 208, 208); */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.mid-img img{
+width: 100%;
+  /* border: 2px solid red; */
+}
+.mid-img{
+  margin: 20px 0px -20px;
+  
+  
+}
+.box-limitless{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.maindiv{
+  /* border: 2px solid blue; */
+  min-height: 100vh;
+}
+.top-div{
+  /* border: 2px solid red; */
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.top-div h1{
+  margin: -15px 0 15px;
+  font-size: 40px;
+  font-weight: 500;
+}
+.nxt-div{
+  /* border: 2px solid black; */
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  /* grid-template-rows: 200px 200px 200px; */
+  gap: 10px;
+  justify-items: center;
+}
+.img-1{
+  /* border: 1px solid red; */
+height: 100%;
+width: 100%;
+}
+.img-1 img{
+  height: 100%; 
+   width: 100%;
+ 
+}
+@media screen and (max-width:950px) {
+  .nxt-div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+  }
+}
+@media screen and (max-width:750px){
+  .nxt-div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  
+}
+@media screen and (max-width:550px){
+  .nxt-div{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+}
+
+.main-footer{
+  /* border: 2px solid red; */
+  min-height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 5px;
+  align-items: center;
+  background-color: black;
+  
+}
+.div-1 p{
+  font-size: 20px;
+  color: whitesmoke;
+}
+/* .div-2 {
+font-size: 30px;
+
+} */
+.div-2 i{
+  color: whitesmoke;
+  margin: 0 5px;
+  font-size: 21px;
+}
+@media screen and (max-width:488px) {
+  .main-footer{
+    flex-direction: column;
+  }
+ .div-1 p{
+  font-size: 15px;
+  text-align: center;
+ }
+}
+.box-1 img{
+  width: 100%;
+  height: 100%;
+}
+.btn-box{
+cursor: pointer;
+}
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="Logo">
+          <h2>Dress Up
+        </h2>
+          <!-- <img src="google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt=""> -->
+        </div>
+      
+        <div class="botton-item">
+            <div class="nav-items">
+                <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Details</a></li>
+                  <li><a href="">Contact us</a></li>
+                </ul>
+              </div>
+          <input type="text">
+          <label for="">Search</label>
+        </div>
+      </div>
+    </header>
+    <!-- we can change -->
+    <div class="container">
+        <div class="box">
+            <h1>ALWAYS BE
+              ORIGINAL
+              </h1>
+            <p>Stylish And Versatile Indianwear  STARTS AT &#8377;799</p>
+            <div class="btn-box">
+                <button class="btn">Read More</button>
+                <button class="btn-outline">Shop Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- main -->
+<section>
+<div class="main">
+  <div class="box-1">
+<img src="19-1590215117.jpg" alt="">
+  </div>
+  <div class="box-2">
+    <h1>Summer Dresses</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar luctus sem, eget porta orci. Maecenas molestie dui id diam feugiat, eu tincidunt mauris aliquam. Duis commodo vitae ligula et interdum. Maecenas faucibus mattis imperdiet. In rhoncus ac ligula id ultricies.</p>
+    <div class="big-btn">
+      <button class="btn">Shop Now</button>
+    </div>
+  </div>
+</div>
+</section>
+<!-- second main -->
+<section class="gray">
+  <div class="main">
+    <div class="box-2">
+      <h1 style="color: whitesmoke;">Winter Dresses</h1>
+      <p style="color: whitesmoke;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar luctus sem, eget porta orci. Maecenas molestie dui id diam feugiat, eu tincidunt mauris aliquam. Duis commodo vitae ligula et interdum. Maecenas faucibus mattis imperdiet. In rhoncus ac ligula id ultricies.</p>
+      <div class="big-btn">
+        <button class="btn" style="color: whitesmoke;">Shop Now</button>
+      </div>
+    </div>
+    <div class="box-1">
+  <img src="istockphoto-1058036480-612x612.jpg" alt="">
+    </div>
+  </div>
+  </section>
+
+  <!-- small parallax section -->
+<section>
+  <div class="container-2">
+    <div class="box">
+        <h1>New Outerwear Collection</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet rhoncus porta. Ut quis sem quis purus lobortis dictum. Aliquam nec dignissim nisl. Vivamus cursus feugiat sapien, eget tincidunt leo ornare quis.</p>
+        <div class="btn-box">
+            <button class="btn"> More Info</button>
+            
+        </div>
+    </div>
+</div>
+</section>
+<!-- limitless option -->
+
+  <section>
+    <div class="container-3">
+      <div class="box">
+          <h1>Limitless Collection</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet rhoncus porta. Ut quis sem quis purus lobortis dictum. Aliquam nec dignissim nisl. Vivamus cursus feugiat sapien, eget tincidunt leo ornare quis.</p>
+          <div class="btn-box">
+              <button class="btn"> Download Now</button>
+              
+          </div>
+          <div class="mid-img">
+            <img src="fashion-clothes-store-shopping-mall-bucharest-romania-april-april-bucharest-romania-40003846.jpg" alt="" >
+          </div>
+      </div>
+  </div>
+  </section>
+
+  <!-- big box -->
+  <section>
+   <div class="maindiv">
+    <div class="top-div">
+<h1>Our Latest Collection</h1>
+<p>Here is our latest product. You'll love them!</p>
+    </div>
+    <div class="nxt-div">
+<div class="img-1">
+
+<img src="cd0d1fffab6afca148a4cb7fedd1c1c1.jpg" alt="">
+</div>
+<div class="img-1">
+  <img src="-473Wx593H-469157895-bluegold-MODEL.webp" alt="">
+</div>
+<div class="img-1">
+  <img src="80076929.jpg" alt="">
+</div>
+<div class="img-1">
+  <img src="48635535292_0480294a8b_z.webp" alt="">
+</div>
+<div class="img-1">
+  <img src="thumbnail-4-575x1024.jpg" alt="">
+</div>
+<div class="img-1">
+  <img src="cd0d1fffab6afca148a4cb7fedd1c1c1.jpg" alt="">
+</div>
+<div class="img-1">
+  <img src="cd0d1fffab6afca148a4cb7fedd1c1c1.jpg" alt="">
+</div>
+<div class="img-1">
+  <img src="cd0d1fffab6afca148a4cb7fedd1c1c1.jpg" alt="">
+</div>
+<div class="img-1">
+  <img src="cd0d1fffab6afca148a4cb7fedd1c1c1.jpg" alt="">
+</div>
+<div class="img-1">
+  <img src="cd0d1fffab6afca148a4cb7fedd1c1c1.jpg" alt="">
+</div>
+<div class="img-1">
+  <img src="cd0d1fffab6afca148a4cb7fedd1c1c1.jpg" alt="">
+</div>
+<div class="img-1">
+  <img src="cd0d1fffab6afca148a4cb7fedd1c1c1.jpg" alt="">
+</div>
+    </div>
+   </div>
+  </section>
+
+  <!-- footer -->
+ <footer>
+  <div class="main-footer">
+    <div class="div-1">
+      <p>Theme by Colorlib Powered by WordPress</p>
+    </div>
+    <div class="div-2">
+      <a href="http:/facebook.com" ><i class="fa-brands fa-facebook"></i></a>
+      <a href=""><i class="fa-brands fa-instagram"></i></a>
+      <a href=""><i class="fa-brands fa-youtube"></i></a>
+      <a href=""><i class="fa-brands fa-google"></i></a>
+    </div>
+  </div>
+ </footer>
+
+  <script
+      src="https://kit.fontawesome.com/5cac7ad27a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
